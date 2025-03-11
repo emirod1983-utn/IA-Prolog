@@ -1,0 +1,14 @@
+:- dynamic gastos/2.
+
+gastos(joel, gasto(cochera, 999)).
+gastos(joel, gasto(seguro, 650)).
+gastos(joel, gasto(luz, 1450)).
+gastos(joel, gasto(super, 149)).
+gastos(maria, gasto(super, 500)).
+gastos(maria, gasto(super, 200)).
+gastos(maria, gasto(telefono, 58100)).
+gastos(perro, gasto(telefono, 450)).
+gastos(perro, gasto(alimento, 125)).
+gastos(omar, gasto(celular, 800)).
+gastos(cesar, gasto(super, 200)).
+
