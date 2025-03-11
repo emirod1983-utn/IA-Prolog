@@ -1,0 +1,12 @@
+:- dynamic gastos/3.
+
+gastos(joel, cochera, 999).
+gastos(maria, telefono, 450).
+gastos(joel, seguro, 150).
+gastos(joel, laloz, 1450).
+gastos(joel, luz, 451).
+gastos(joel, panchito, 50).
+gastos(luisito, peluqueria, 725).
+gastos(ana, ciber, 123).
+gastos(ana, piculeria, 1200).
+
