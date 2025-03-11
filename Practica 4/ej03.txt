@@ -1,0 +1,8 @@
+:- dynamic animal/5.
+
+animal(alan, alimentacion(maiz, 10), bebida(agua, 20), reproduccion(verano, 9), 8).
+animal(andrea, alimentacion(carne, 20), bebida(agua, 13), reproduccion(epoca, periodo), 8).
+animal(cacho, alimentacion(maiz, 15), bebida(coca, 15), reproduccion(epoca, periodo), 7).
+animal(marta, alimentacion(pasto, 25), bebida(agua, 22), reproduccion(epoca, periodo), 6).
+animal(juana, alimentacion(insectos, 12), bebida(agua, 35), reproduccion(epoca, periodo), 10).
+
