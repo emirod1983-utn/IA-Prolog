@@ -1,0 +1,7 @@
+:- dynamic persona/2.
+
+persona(1, messi).
+persona(2, ginobili).
+persona(3, pareto).
+persona(4, penaldo).
+persona(5, rivery).
