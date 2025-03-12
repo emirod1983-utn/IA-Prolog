@@ -1,5 +1,6 @@
 % Ejercicio 6
-inicio:-write('Ingrese una lista: '),
+inicio:-
+    write('Ingrese una lista: '),
     leer([H|T]),
     traer_ultimo([H|T],U),
     Dif is H - U,

@@ -1,12 +1,14 @@
 % Ejercicio 8
 inicio:-
     leer(Lista),
-    sumar(Lista,Suma_total),
+    sumar(Lista,Suma),
     write('El resultado de la suma es: '),
-    writeln(Suma_total).
+    writeln(Suma).
 
 leer([H|T]):-read(H),H\=[],leer(T).
 leer([]).
 
 sumar([],0).
-sumar(([H|T]),Suma_total):-sumar(T,Suma_acum),Suma_total is H + Suma_acum.
+sumar(([H|T]),Suma):-
+    sumar(T,SumaParc),
+    Suma is SumaParc + H.

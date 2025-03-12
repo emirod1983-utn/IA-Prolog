@@ -13,17 +13,17 @@ leer([]).
 % Resolucion haciendo algoritmo hacia adelante
 % La validacion ocurre antes de la recursividad
 mayor_hacia_adelante([],Max,Max).
-mayor_hacia_adelante([H|T],Max_parc,Max):-H>=Max_parc,mayor_hacia_adelante(T,H,Max).
-mayor_hacia_adelante([_|T],Max_parc,Max):-mayor_hacia_adelante(T,Max_parc,Max).
+mayor_hacia_adelante([H|T],MaxParc,Max):-
+    H>=MaxParc,
+    mayor_hacia_adelante(T,H,Max).
+mayor_hacia_adelante([_|T],MaxParc,Max):-
+    mayor_hacia_adelante(T,MaxParc,Max).
 
-% Resolucion haciendo la recursividad de la forma alternativa
-% Armarmos una pila con todos los elementos y validamos luego de la
-% recursividad.
+% Resolucion recomendada
+% Armarmos una pila con todos los elementos y validamos luego de la recursividad.
 mayor([H],H).
-% Cuando el mayor es H, devolvemos H
-mayor([H|T],H):-mayor(T,Mayor_parc),H > Mayor_parc.
-% Cuando el mayor es el Mayor_parc, devolvemos ese.
-mayor([H|T],Mayor_parc):-mayor(T,Mayor_parc), H =< Mayor_parc.
+mayor([H|T],H):-mayor(T,MaxParc),H > MaxParc. % Cuando el mayor es H, devolvemos H
+mayor([H|T],MaxParc):-mayor(T,MaxParc), H =< MaxParc. % Cuando el mayor es MaxParc, devolvemos ese.
 
 
 
