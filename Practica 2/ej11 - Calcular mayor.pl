@@ -1,9 +1,9 @@
 % Ejercicio 11
 inicio:-leer(Lista),
+    writeln('Calculo del mayor con la forma A: '),
     mayor_hacia_adelante(Lista,0,Mayor),
-    write('Calculo del mayor con la forma A: '),
     writeln(Mayor),
-    write('Calculo del mayor con la forma B: '),
+    writeln('Calculo del mayor con la forma B: '),
     mayor(Lista,May),
     writeln(May).
 
@@ -21,9 +21,9 @@ mayor_hacia_adelante([_|T],MaxParc,Max):-
 
 % Resolucion recomendada
 % Armarmos una pila con todos los elementos y validamos luego de la recursividad.
-mayor([H],H).
+mayor([H|[]],H).
 mayor([H|T],H):-mayor(T,MaxParc),H > MaxParc. % Cuando el mayor es H, devolvemos H
-mayor([H|T],MaxParc):-mayor(T,MaxParc), H =< MaxParc. % Cuando el mayor es MaxParc, devolvemos ese.
+mayor([H|T],MaxParc):-mayor(T,MaxParc), H =< MaxParc. % Cuando el mayor es MaxParc, devolvemos MaxParc.
 
 
 

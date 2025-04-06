@@ -15,4 +15,3 @@ leer([]).
 pertenece([],C):-write(C),writeln(' no pertenece a la lista.').
 pertenece([C|_],C):-write(C),writeln(' pertenece a la lista.').
 pertenece([_|T],C):-pertenece(T,C).
-

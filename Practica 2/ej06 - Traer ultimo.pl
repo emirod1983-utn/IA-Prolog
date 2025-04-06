@@ -10,6 +10,6 @@ inicio:-
 leer([H|T]):-read(H),H\=[],leer(T).
 leer([]).
 
-% [H] es equivalente a [H|[]]
-traer_ultimo([H],H).
+% [H] es equivalente a [H|[]] pero no me lo aceptaron en examenes
+traer_ultimo([H|[]],H).
 traer_ultimo([_|T],U):-traer_ultimo(T,U).
