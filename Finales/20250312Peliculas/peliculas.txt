@@ -1,0 +1,17 @@
+% pelicula(Nombre, Genero, [Directores], [Actores], Duracion, FechaEstreno(Anio, Mes, Dia), Pais).
+
+pelicula('Inception', ciencia_ficcion, ['Christopher Nolan'], ['Leonardo DiCaprio', 'Joseph Gordon-Levitt'], 148, fecha_estreno(2010, 7, 16), usa).
+pelicula('The Revenant', drama, ['Alejandro González Iñárritu'], ['Leonardo DiCaprio', 'Tom Hardy'], 156, fecha_estreno(2015, 12, 25), usa).
+pelicula('Django Unchained', western, ['Quentin Tarantino'], ['Leonardo DiCaprio', 'Jamie Foxx'], 165, fecha_estreno(2012, 12, 25), usa).
+pelicula('Pulp Fiction', crimen, ['Quentin Tarantino'], ['John Travolta', 'Samuel L. Jackson'], 154, fecha_estreno(1994, 10, 14), usa).
+pelicula('Avengers: Endgame', accion, ['Anthony Russo', 'Joe Russo'], ['Robert Downey Jr.', 'Chris Evans', 'Scarlett Johansson'], 181, fecha_estreno(2019, 4, 26), usa).
+pelicula('Avengers: Infinity War', accion, ['Anthony Russo', 'Joe Russo'], ['Robert Downey Jr.', 'Chris Hemsworth', 'Scarlett Johansson'], 149, fecha_estreno(2018, 4, 27), usa).
+pelicula('Iron Man', accion, ['Jon Favreau'], ['Robert Downey Jr.', 'Gwyneth Paltrow'], 126, fecha_estreno(2008, 5, 2), usa).
+pelicula('Sherlock Holmes', aventura, ['Guy Ritchie'], ['Robert Downey Jr.', 'Jude Law'], 128, fecha_estreno(2009, 12, 25), usa).
+pelicula('The Matrix', ciencia_ficcion, ['Lana Wachowski', 'Lilly Wachowski'], ['Keanu Reeves', 'Laurence Fishburne'], 136, fecha_estreno(1999, 3, 31), usa).
+pelicula('John Wick', accion, ['Chad Stahelski'], ['Keanu Reeves'], 101, fecha_estreno(2014, 10, 24), usa).
+pelicula('Speed', accion, ['Jan de Bont'], ['Keanu Reeves', 'Sandra Bullock'], 116, fecha_estreno(1994, 6, 10), usa).
+pelicula('Birdman', drama, ['Alejandro González Iñárritu'], ['Michael Keaton', 'Edward Norton'], 119, fecha_estreno(2014, 8, 27), usa).
+pelicula('Cloud Atlas', drama, ['Tom Tykwer', 'Lana Wachowski', 'Lilly Wachowski'], ['Tom Hanks', 'Halle Berry'], 172, fecha_estreno(2012, 10, 26), alemania).
+pelicula('Catch Me If You Can', biografica, ['Steven Spielberg'], ['Leonardo DiCaprio', 'Tom Hanks'], 141, fecha_estreno(2002, 12, 25), usa).
+pelicula('The Terminal', comedia, ['Steven Spielberg'], ['Tom Hanks', 'Catherine Zeta-Jones'], 128, fecha_estreno(2004, 6, 18), usa).
