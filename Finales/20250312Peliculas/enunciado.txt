@@ -3,4 +3,4 @@ pelicula(Nombre, Genero, [Directores], [Actores], Duracion, FechaEstreno(Anio, M
 Ejercicios
  - Ingrese un actor y mostrar las películas en las que actuó
  - Ingrese un listado de películas y mostrar de esas películas las q fueron dirigidas por al menos 2 directores
- - Cuantas películas fueron estrenadas en un año
+ - Cuantas películas fueron estrenadas en un año (este ejercicio estaba en el enunciado pero no habia que resolverlo)
