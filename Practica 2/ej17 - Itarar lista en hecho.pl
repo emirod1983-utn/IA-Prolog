@@ -7,9 +7,9 @@ inicio:-write('Ingrese nombre: '),
         read(Nombre),
         write('Ingrese ciudad: '),
         read(Ciudad),
-        persona(Nombre,X),
-        visito(Nombre,Ciudad,X).
+        persona(Nombre,Ciudades),
+        visito(Nombre,Ciudad,Ciudades).
 
-visito(N,_,[]):-write(N), writeln(' no visito esa ciudad').
-visito(N,C,[C|_]):-write(N),write(' visito '),writeln(C).
-visito(N,C,[_|T]):-visito(N,C,T).
+visito(Nombre,_,[]):-write(Nombre), writeln(' no visito esa ciudad').
+visito(Nombre,Ciudad,[Ciudad|_]):-write(Nombre),write(' visito '),writeln(Ciudad).
+visito(Nombre,Ciudad,[_|T]):-visito(Nombre,Ciudad,T).

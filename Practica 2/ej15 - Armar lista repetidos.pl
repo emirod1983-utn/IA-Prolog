@@ -1,5 +1,6 @@
 % Ejercicio 15 - Armar listas condicionalmente
 inicio:-
+    writeln("Ingrese una lista de numeros para encontrar los repetidos"),
     leer(Lista),
     repetidos(Lista,Repetidos),
     write('Los repetidos son: '),

@@ -21,7 +21,10 @@ ultimo_caracter(Cadena,Car):-sub_atom(Cadena,_,1,0,Car).
 % Resolucion usando atom_length
 % cant_caracteres(Cadena,Long):-atom_length(Cadena,Long).
 
-% Resolucion sin usar atom_length
+% Resolucion usando sub_atom
+% cant_caracteres(Cadena,Long):-sub_atom(Cadena,0,Long,0,_),
+
+% Resolucion sin usar atom_length recursivamente
 cant_caracteres('',0).
 cant_caracteres(Cadena,Cant):-sub_atom(Cadena,1,_,0,Sub),
     cant_caracteres(Sub,CantSub),
