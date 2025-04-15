@@ -14,6 +14,7 @@ menu:-
     writeln('Ingrese una opcion'),
     writeln('1. Ingresar actor y mostrar sus peliculas'),
     writeln('2. Ingresar peliculas y mostrar aquellas con dos o mas directores'),
+    writeln('3. Ingresar peliculas y mostrar aquellas con dos o mas directores (lista condicional)')
     writeln('0. Salir'),
     read(Op),
     Op\=0,
@@ -62,6 +63,16 @@ filtrar_peliculas([H|T]):-
     multiples_directores(H),
     filtrar_peliculas(T).
 
+% Ejercicio 2 creando una lista condicionalmente
+pelis_directores([],[]).
+pelis_directores([H1|T1],[H1|T2]):-
+    pelicula(H1,_,Directores,_,_,_,_),
+    contar(Directores,Cantidad),
+    Cantidad > 1,
+    pelis_directores(T1,T2).
+pelis_directores([_|T1],Filtradas):-
+    pelis_directores(T1,Filtradas).
+
 % Opciones
 opcion(1):-
     writeln('Ingrese el nombre de un actor: '),
@@ -75,12 +86,11 @@ opcion(2):-writeln('Ingrese una lista de peliculas'),
     writeln('Peliculas de la lista que fueron dirigidas por al menos 2 directores'),
     filtrar_peliculas(Peliculas).
 
-
-
-
-
-
-
+opcion(3):-writeln("Ingrese una lista de peliculas"),
+    leer(Peliculas),
+    pelis_directores(Peliculas,PelisFiltradas),
+    writeln('Peliculas de la lista que fueron dirigidas por al menos 2 directores'),
+    writeln(PelisFiltradas).
 
 
 
