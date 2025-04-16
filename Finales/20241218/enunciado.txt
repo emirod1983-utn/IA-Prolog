@@ -1,0 +1,6 @@
+niño(Nombre, Edad, [Vacunas_aplicadas]). 
+vacuna(Nombre, [Enfermedades_que_trata]). 
+
+Ejercicios
+ - Ingrese vacuna y determine la edad promedio de los niños que tienen esa vacuna aplicada
+ - Ingrese enfermedad y obtenga una lista de vacunas que la combaten
