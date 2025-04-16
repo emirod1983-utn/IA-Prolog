@@ -1,0 +1,14 @@
+% Hechos sobre vacunas y las enfermedades que tratan
+vacuna(bcg, [tuberculosis]).
+vacuna(pentavalente, [difteria, tetanos, tos_convulsa, hepatitis_b, haemophilus_influenzae_b]).
+vacuna(sabin, [poliomielitis]).
+vacuna(triple_viral, [sarampion, paperas, rubeola]).
+vacuna(antigripal, [gripe]).
+vacuna(covid19, [covid19]).
+
+% Hechos sobre niños, sus edades y las vacunas que se les aplicaron
+infante(juan, 5, [bcg, pentavalente, sabin, triple_viral]).
+infante(maria, 3, [bcg, pentavalente, sabin]).
+infante(sofia, 7, [bcg, pentavalente, sabin, triple_viral, antigripal]).
+infante(lucas, 2, [bcg, pentavalente]).
+infante(valentina, 6, [bcg, pentavalente, sabin, triple_viral, covid19]).

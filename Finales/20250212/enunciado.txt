@@ -8,5 +8,4 @@ Ejercicios
    * La distancia del destino no supere a la ingresada.
  - Dado una lista de actividades deportivas, devolver aquellos destinos que matcheen con todas esas actividades.
 
-Mostrar un mensaje si no se encuentra nada en cada punto
-
+Mostrar un mensaje si no se encuentra nada en cada punto (pendiente)
