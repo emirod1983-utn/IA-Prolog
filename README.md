@@ -4,6 +4,10 @@
 
 Resolución de ejercicios y exámenes finales de la materia Inteligencia Artificial, correspondiente a la UTN Facultad Regional Rosario.
 
+Los enunciados fueron recopilados de diferentes fuentes (Facebook, WhatsApp, Discord, etc.)
+
+La carpeta de finales esta organizada por fecha de examen con el formato AAAAMMDD (Año, Mes, Dia).
+
 ## Nota Importante
 
 En algunos ejercicios uso un patron en donde hago lo siguiente
